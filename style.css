@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vim;
+    width: 100%;
+    
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: #4a5759;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.choice-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    
+}
+
+#rock, #paper, #scissors{
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#rock{
+    background-image: url("images/rock.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#paper{
+    background-image: url("images/paper.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#scissors{
+    background-image: url("images/scissors.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#scissors:hover{
+    border: 3px solid black;
+}
+
+#rock:hover{
+    border: 3px solid black;
+}
+
+#paper:hover{
+    border: 3px solid black;
+}
+
+/* .msg{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.msg{
+    margin-top: 35px;
+    display: flex;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    background-color: #4a5759;
+    border-radius: 20px;
+    color: white;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 28px;
+    gap: 3rem;
+    font-weight: 600;
+}
+
+#userScore{
+    text-align: center;
+    line-height: 3rem;
+}
+
+#compScore{
+    text-align: center;
+    line-height: 3rem;
+}
